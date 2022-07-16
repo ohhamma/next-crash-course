@@ -2,9 +2,9 @@ import Link from 'next/link'
 import articleStyles from '../styles/Article.module.css'
 import styled from 'styled-components'
 
-const ArticleItem = ({article}) => {
+const ArticleItem = ({ article }) => {
   return (
-    <Link href="/article/[id]" as={`/article/${article.id}`}>
+    <Link href={`/article/${article.id}`}>
       <a className={articleStyles.card}>
         <h3>{article.title} &rarr;</h3>
         {/* <ArticleTitle>{article.title} &rarr;</ArticleTitle> */}

@@ -4,13 +4,13 @@ import styled from 'styled-components'
 
 const ArticleList = ({articles}) => {
   return (
-    // <div className={articleStyles.grid}>
-    <ArticleGrid>
+    <div className={articleStyles.grid}>
+    {/* <ArticleGrid> */}
       {articles.map((article) => (
-        <ArticleItem article={article} />
-        ))}
-    </ArticleGrid>
-    // </div>
+        <ArticleItem key={article.id} article={article} />
+      ))}
+    {/* </ArticleGrid> */}
+    </div>
   )
 }
 
